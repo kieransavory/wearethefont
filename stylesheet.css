@@ -1,0 +1,91 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    
+}
+
+body{
+    background-color: rgb(0, 0, 0);
+}
+
+.navbar{ 
+    display: flex;
+    width: 100vw;
+    height: 7vh;
+    border-bottom: 3px solid whitesmoke;
+}
+
+.navbar img{
+    margin: 10px auto;
+}
+
+.hamburgermenu{
+    width: 50px;
+    height: 5vh;
+    margin: 10px;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+}
+
+.hamburgerbar{ 
+    display: inline-block;
+    background-color: whitesmoke;
+    width: 100%;
+    height: 7px;
+}
+
+
+
+
+
+
+.openmenu{ 
+    z-index: 5;
+    visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    top: -100vh;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(0, 0, 0);
+    transition: all 0.8s;
+}
+
+.openmenu.active{ 
+    background-color: rgb(0, 0, 0);
+    z-index: 5;
+    visibility: visible;
+    transition: all 0.8s;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+.openmenu span{ 
+    color: whitesmoke;
+    float: right;
+    margin: 15px;
+    font-size: 30px;
+}
+
+.openmenu span:hover{ 
+    cursor: pointer;
+}
+
+
+.menulist{
+    margin: 10px;
+}
+
+.menulist li a {
+    color: whitesmoke;
+    font-size: 200px;
+    text-decoration: none;
+    border-bottom: none;
+}
+
+
